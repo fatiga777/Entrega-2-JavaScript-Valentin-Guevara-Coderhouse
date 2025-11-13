@@ -2,43 +2,43 @@ const productos = [
   {
     id: 1,
     nombre: "Iphone 17 Pro Max 256GB (Plata)",
-    imagen: "../images/iphone17promax256gb(silver).webp",
+    imagen: "./images/iphone17promax256gb-silver.webp",
     precio: 1550
   },
   {
     id: 2,
     nombre: "Iphone 16 128GB (Negro)",
-    imagen: "../images/iphone16(128gb)-negro.webp",
+    imagen: "./images/iphone16-128gb-negro.webp",
     precio: 1100
   },
   {
     id: 3,
     nombre: "Iphone 15 Pro Max 1TB (Blanco)",
-    imagen: "../images/iphone15promax(1TB).jfif",
+    imagen: "./images/iphone15promax-1tb-blanco.jfif",
     precio: 1340
   },
   {
     id: 4,
     nombre: "Iphone 11 128GB (Rojo)",
-    imagen: "../images/iphone11(128gb)rojo.jfif",
+    imagen: "./images/iphone11-128gb-rojo.jfif",
     precio: 410
   },
   {
     id: 5,
     nombre: "Iphone 11 128GB (Blanco)",
-    imagen: "../images/iphone11(128)blanco.jpg",
+    imagen: "./images/iphone11-128gb-blanco.jpg",
     precio: 430
   },
   {
     id: 6,
-    nombre: "Cargador Portatil AppleCargador 20w Para Iphone + Cargador Portatil Battery Blanco",
-    imagen: "../images/cargadorportatiliphone.jpg",
+    nombre: "Cargador Portátil Apple 20w + Battery Blanco",
+    imagen: "./images/cargadorportatiliphone.jpg",
     precio: 30
   },
-{
+  {
     id: 7,
     nombre: "Lavadora LG TurboWash 360™ 22 Kg",
-    imagen: "../images/lavadora.avif",
+    imagen: "./images/lavadora.avif",
     precio: 450
   },
 ]
@@ -80,7 +80,6 @@ function agregarAlCarrito() {
       }
 
       localStorage.setItem("cartProducts", JSON.stringify(cartProducts))
-      console.log(cartProducts)
 
       mostrarCantidadTotal()
     }
