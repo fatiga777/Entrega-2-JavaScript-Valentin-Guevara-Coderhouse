@@ -15,8 +15,18 @@ function renderCarrito() {
   carrito.forEach(prod => {
     const item = document.createElement("div")
     item.classList.add("carrito-item")
+
+// ACA SOLUCIOne el tema de las rutas de las imagenes!!
+
+    let rutaImagen = prod.imagen
+    if (rutaImagen.startsWith("./")) {
+      rutaImagen = "../" + rutaImagen.slice(2)
+    } else if (rutaImagen.startsWith("../") === false && !rutaImagen.startsWith("http")) {
+      rutaImagen = "../" + rutaImagen
+    }
+
     item.innerHTML = `
-      <img src="${prod.imagen}" alt="${prod.nombre}">
+      <img src="${rutaImagen}" alt="${prod.nombre}">
       <div class="carrito-info">
         <h3>${prod.nombre}</h3>
         <p>Precio: USD ${prod.precio}</p>
