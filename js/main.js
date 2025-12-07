@@ -1,4 +1,6 @@
+let productsContainer = document.getElementById("products-container"); 
 let productos = [];
+let cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
 async function cargarProductos() {
   try {
@@ -20,10 +22,6 @@ async function cargarProductos() {
 }
 
 cargarProductos();
-
-let cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-
-let productsContainer = document.getElementById("products-container");
 
 function renderProductos(productsArray) {
   productsContainer.innerHTML = "";
