@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito - DeTodoSHOP</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script defer src="../js/carrito.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito - DeTodoSHOP</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JS -->
+    <script defer src="../js/carrito.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a href="../index.html" style="text-decoration: none; color: inherit">
+          <h2>DeTodoSHOP</h2>
+        </a>
+      </div>
+      <nav>
+        <a href="../index.html" class="carrito-link">🏠 Volver a la tienda</a>
+      </nav>
+    </header>
 
-  <header class="navbar">
-    <div class="logo">
-      <a href="../index.html" style="text-decoration:none; color:inherit;">
-        <h2>DeTodoSHOP</h2>
-      </a>
+    <h1>Tu Carrito 🛒</h1>
+
+    <section id="carrito-container"></section>
+
+    <div id="carrito-total">
+      <h3>Total: USD <span id="total-precio">0</span></h3>
+      <button id="vaciar-carrito">Vaciar Carrito</button>
+      <button id="finalizar-compra">Finalizar compra</button>
     </div>
-    <nav>
-      <a href="../index.html" class="carrito-link">🏠 Volver a la tienda</a>
-    </nav>
-  </header>
-
-  <h1>Tu Carrito 🛒</h1>
-
-  <section id="carrito-container">
-  </section>
-
-  <div id="carrito-total">
-    <h3>Total: USD <span id="total-precio">0</span></h3>
-    <button id="vaciar-carrito">Vaciar Carrito</button>
-  </div>
-
-</body>
+  </body>
 </html>

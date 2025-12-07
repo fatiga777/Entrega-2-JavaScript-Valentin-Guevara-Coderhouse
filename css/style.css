@@ -35,7 +35,7 @@ h1 {
 #products-container img {
   width: 180px;
   height: 180px;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -117,7 +117,7 @@ h1 {
   max-width: 600px;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -179,3 +179,16 @@ h1 {
   background-color: #cc0000;
 }
 
+#finalizar-compra {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#finalizar-compra:hover {
+  background-color: #27ae60;
+}
